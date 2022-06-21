@@ -14,12 +14,14 @@ const Post = ({ data }) => {
                 <img src={data.liked ? Heart : NotLike} alt="" />
                 <img src={Comment} alt="" />
                 <img src={Share} alt="" />
-                <span>{data.likes} likes</span>
+            </div>
+                <span style={{ color: 'var(--gray)', fontSize: '12px'}}>{data.likes} likes</span>
+
                 <div className="detail">
                     <span><b>{data.name}</b></span>
                     <span>{data.desc}</span>
                 </div>
-            </div>
+                
         </div>
     );
 }
